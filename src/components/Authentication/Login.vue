@@ -28,8 +28,10 @@
       </b-form-group>
     </ValidationProvider>
 
+    <ValidationProvider name="submit" v-slot="{ valid, errors }">
     <b-button variant="primary" type="submit"
      :disabled="errors[0] || ! user.password">Iniciar sesión</b-button>
+     </ValidationProvider>
   </b-form>
 </template>
 
